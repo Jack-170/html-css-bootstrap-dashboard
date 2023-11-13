@@ -6,12 +6,31 @@
 }
 
 :root{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body{
     font-family: "Roboto";
 }
+
+/* stili colori */
+.ms-bg-white{
+    background-color: white;
+}
+
+.ms-bg-grey{
+    background-color: #e5e5e5;
+}
+
+.ms-bg-blue{
+    background-color: #1b72e8;
+}
+
+.ms-button-color{
+    background-color: #155ab9;
+}
+
+
 
 /* stili macro */
 
@@ -30,6 +49,7 @@ header{
 
 .ms-sidebar{
     width:140px ;
+    position: relative;
     height: 100%;
     background-color: #051e34;
     /* debug rules */
@@ -39,29 +59,27 @@ header{
 }
 
 .ms-main-content{
-    width: calc(100vw - 140px);
+    flex-grow: 1;
+    overflow: auto;
     /* debug rules */
 }
 
 [class*="col-"] {
     min-height: 60px;
-    background-color: blue;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 
 
 
-/* dekstop first */
+/* dekstop first * *******************************/
 
+/* stili header ******************************* */
 /* stili navbar */
 .fa-solid.fa-bell{
     color: #ff8f00;
 }
 
-.ms-bg-white{
-    background-color: white;
-}
 
 .btn.btn-secondary.dropdown-toggle{
     background-color: white;
@@ -69,27 +87,43 @@ header{
 }
 
 
+/* stili main *******************************/
+
+/* stili sidebar */
+.ms-ol{
+    list-style-type:none;
+    padding-left: 0;
+}
+
+.ms-bottom-content{
+    position: absolute;
+    bottom:0;
+    right: 50%;
+    transform: translate(50%,-50%);
+    bottom: 0;
+}
 
 
 
 
-/* tablet md version */
+
+/* stili main-content*/
+.ms-topbar-main .btn{
+    font-size: 12px;
+}
+
+
+
+/* tablet md version ********************************/
 
 @media all and (max-width:991px) {
     .ms-sidebar{
         width:60px ;
-        height: 100%;
-        background-color: #051e34;
-        /* debug rules */
-        border: 1px solid black;
-        background-image: url(../img/sidebar-bg.png);
-        background-size: cover;
     }
-    
-    .ms-main-content{
-        width: calc(100vh - 60px);
-        /* debug rules */
-    }
+
+    .ms-sidebar span{
+        display: none;
+    } 
     
   }
 
@@ -100,7 +134,7 @@ header{
 
 
 
-/* mobile sm version */
+/* mobile sm version ********************************/
 
 @media all and (max-width:576px) {
     

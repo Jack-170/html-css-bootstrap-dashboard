@@ -17,16 +17,23 @@
         <nav class="navbar h-100 bg-body-tertiary">
             <div class="container-fluid">
               <div class="p-3">
-                <img  src="img/logo.svg" alt="">
+                <img class="d-none d-lg-block" src="img/logo.svg" alt="">
               </div>
+              <div class="p-3">
+                <img class="d-block d-lg-none" style="height: 40px;" src="img/mobile-logo.png" alt="">
+              </div>
+              
               <form class=" d-flex flex-grow-1" role="search">
                 <label class=" my-auto DocSearch-MagnifierLabel" for="docsearch-input" id="docsearch-label"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></label>
-                <input class="form-control rounded-2 me-2" type="search"placeholder="  Prova a cercare Lezioni di LARAVEL" aria-label="Search">
-                <div class="d-flex align-items-center">
-                    <i class="mx-2 fa-solid fa-list"></i>
-                    <i class="mx-2 fa-regular fa-circle-question"></i>
-                    <i class="mx-2 fa-solid fa-ellipsis-vertical"></i>
+                <input class="ms-bg-grey form-control rounded-2 me-2" type="search"placeholder="  Prova a cercare Lezioni di LARAVEL" aria-label="Search">
+                <div class="d-none d-lg-block">
+                    <div class="d-flex mt-2">
+                        <i class="mx-2 fa-solid fa-list"></i>
+                        <i class="mx-2 fa-regular fa-circle-question"></i>
+                        <i class="mx-2 fa-solid fa-ellipsis-vertical"></i>
+                    </div>
                 </div>
+               
                
                 <div class="btn-group dropstart dropdown">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,17 +54,174 @@
     </header>
 
     <main>
-        <div class="ms-wrapper d-flex">
-            <div class="ms-sidebar"></div>
+        <div class="ms-wrapper d-flex text-white">
+            <div class="ms-sidebar d-flex">
+                <div class="container-fluid text-center">
+                    <div>
+                        <ol class="ms-ol">
+                            <li class="my-3">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="ms-2">Home</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span class="ms-2">Stats</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa-solid fa-signal"></i>
+                                <span class="ms-2">Signal</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="ms-bottom-content">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="ms-2">Admin</span>
+                    </div>
+                    
+                </div>
+            </div>
 
             <div class="ms-main-content">
-                <div class="container-fluid">
+                <section class="ms-topbar-main">
+                    <div class="ms-bg-blue container-fluid text-white">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-4 col-s-12 ">
+                                <div class="p-3">
+                                    <div class=" d-flex align-items-center">
+                                        <h2>Boolean</h2>
+                                        <button type="button" class=" ms-button-color rounded-4 btn btn-primary btn-sm">Piano blaze</button>
+                                    </div>
+    
+                                    <div>
+                                        <button type="button" class=" ms-button-color rounded-4 btn btn-primary btn-sm">3 app</button>
+                                        <i class="fa-solid fa-angles-right"></i>
+                                        <div class="d-inline ">
+                                            <button type="button" class="d-lg-none ms-button-color rounded-4 btn btn-primary btn-sm">+</button>
+                                            <button type="button" class="d-none d-lg-inline ms-button-color rounded-4 btn btn-primary btn-sm">Boolean mobile app</button>
+                                            <button type="button" class="d-none d-lg-inline ms-button-color rounded-4 btn btn-primary btn-sm">Boolean web app</button>
+                                            <button type="button" class="d-none d-lg-inline ms-button-color rounded-4 btn btn-primary btn-sm">Boolean block app</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-s-12">
+                                <div class="p-3">
+                                    <div>
+                                        <span>Studenti Online negli ultimi 30 minuti</h2>
+                                        <h3>125</h1>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-s-12">
+                                <div>
+                                    <div class="p-3">
+                                        <span>Nuovo studente</span>
+                                        <!-- offcanvas -->
+                                        <div class="d-inline">
+                                            <button class=" border-white btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                                            <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                            <div class="offcanvas-header">
+                                                <h4 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h4>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <form>
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <label for="name" class="form-label">Nome</label>
+                                                                <input type="text" class="form-control" >
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <label for="surname" class="form-label">Cognome</label>
+                                                                <input type="text" class="form-control" >
+                                                            </div>
+    
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <label for="name" class="form-label">Email</label>
+                                                                <div class="input-group">
+                                                                    <div class="input-group-prepend">
+                                                                      <span class="input-group-text">@</span>
+                                                                    </div>
+                                                                    <input type="email"  class="form-control">
+                                                                </div>    
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <label for="password" class="form-label">Password</label>
+                                                                <input type="password" class="form-control" >
+                                                            </div>
+                                                           
+                                                            <div class="col-lg-12 col-md-12">
+                                                                <label for="address" class="form-label">Indirizzo</label>
+                                                                <input type="text" class="form-control" >
+                                                            </div>
+
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <label for="city" class="form-label">Città</label>
+                                                                <input type="text" class="form-control" >
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <label for="city" class="form-label">Stato</label>
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected>scegli</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div> 
+                                                            <div class="col-lg-2 col-md-2">
+                                                                <label for="cap" class="form-label">Cap</label>
+                                                                <input type="text" class="form-control" >
+                                                            </div>
+
+                                                            <div class="col-lg-12 col-md-12">
+                                                                <div class="mb-3">
+                                                                    <label for="formFile" class="form-label">Foto</label>
+                                                                    <input class="form-control" type="file" id="formFile">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-12 col-md-12">
+                                                                <div class="p-2">
+                                                                    <input type="checkbox" name="" id="">
+                                                                    <span>Seleziona per proseguire</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-12 col-md-12">
+                                                                <div class="p-2">
+                                                                    <button type="button" class="btn btn-primary">Salva</button>
+                                                                    <button type="button" class="btn btn-warning">Svuota</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                            
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 col-lg-8 my-3">
                             
                         </div>
-                        <div class="col-12 col-lg-8 my-3"></div>
-                        <div class="col-12 my-3 col-lg-4"></div>
+                        <div class="col-12 my-3 col-lg-4">
+
+                        </div>
                     </div>
                 </div>
             </div>
