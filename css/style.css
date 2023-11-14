@@ -30,6 +30,11 @@ body{
     background-color: #155ab9;
 }
 
+.ms-grey{
+    color: #6c757d;
+    border:1px solid #6c757d;
+}
+
 
 
 /* stili macro */
@@ -65,8 +70,8 @@ header{
 }
 
 [class*="col-"] {
-    min-height: 60px;
-    border: 1px solid black;
+    /* min-height: 60px; */
+    /* border: 1px solid black; */
 }
 
 
@@ -102,6 +107,34 @@ header{
     transform: translate(50%,-50%);
     bottom: 0;
 }
+
+.ms-larger-font{
+    font-size:16px
+}
+
+/* stili main content */
+
+
+
+.ms-box-img{
+    height: 25px;
+    width: 25px;
+}
+.ms-img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.ms-border-grey{
+    border: 1px solid grey;
+}
+
+.ms-border-grey-bottom{
+    border-bottom: 1px solid grey;
+}
+
+
 
 
 

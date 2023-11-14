@@ -24,7 +24,7 @@
               </div>
               
               <form class=" d-flex flex-grow-1" role="search">
-                <label class=" my-auto DocSearch-MagnifierLabel" for="docsearch-input" id="docsearch-label"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></label>
+                <label class=" my-auto DocSearch-MagnifierLabel" for="docsearch-input" id="docsearch-label"></label><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></label>
                 <input class="ms-bg-grey form-control rounded-2 me-2" type="search"placeholder="  Prova a cercare Lezioni di LARAVEL" aria-label="Search">
                 <div class="d-none d-lg-block">
                     <div class="d-flex mt-2">
@@ -54,20 +54,20 @@
     </header>
 
     <main>
-        <div class="ms-wrapper d-flex text-white">
-            <div class="ms-sidebar d-flex">
-                <div class="container-fluid text-center">
+        <div class="ms-wrapper d-flex">
+            <div class="ms-sidebar text-white d-flex text-lg">
+                <div class="container-fluid text-center ms-larger-font">
                     <div>
                         <ol class="ms-ol">
-                            <li class="my-3">
+                            <li class="mt-5 mb-4">
                                 <i class="fa-solid fa-house"></i>
                                 <span class="ms-2">Home</span>
                             </li>
-                            <li class="mb-3">
+                            <li class="mb-4">
                                 <i class="fa-solid fa-chart-simple"></i>
                                 <span class="ms-2">Stats</span>
                             </li>
-                            <li class="mb-3">
+                            <li class="mb-4">
                                 <i class="fa-solid fa-signal"></i>
                                 <span class="ms-2">Signal</span>
                             </li>
@@ -141,7 +141,7 @@
                                                             </div>
     
                                                             <div class="col-lg-6 col-md-6">
-                                                                <label for="name" class="form-label">Email</label>
+                                                                <label for="email" class="form-label">Email</label>
                                                                 <div class="input-group">
                                                                     <div class="input-group-prepend">
                                                                       <span class="input-group-text">@</span>
@@ -212,17 +212,228 @@
                         </div>
                     </div>
                 </section>
-
-
-                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-lg-8 my-3">
-                            
+                <div class="col-12 col-lg-8 my-3">
+                    <div class="ms-container  ms-2 rounded-3 ms-border-grey">
+                        <div class="ms-bg-grey ms-border-grey-bottom rounded-top-3">
+                            <h2 class="p-3">Prossime classi</h2>
                         </div>
-                        <div class="col-12 my-3 col-lg-4">
 
+                        <div class="p-3">
+                            <table class="table table table-hover p-2">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Data Inizio</th>
+                                    <th scope="col">Roi</th>
+                                    <th scope="col">Stato</th>
+                                    <th scope="col">Azioni</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- tr1 -->
+                                  <tr style="vertical-align: middle;">
+                                    <th  scope="row">
+                                        <div class="ms-box-img d-inline-block">
+                                            <img class="ms-img " src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span>Classe 75</span>
+                                    </th>
+                                    <td >15 Febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td>
+                                        <button type="button" class="btn btn-success">Done</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-pencil"></i></button>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-trash-can"></i> </button>
+                                    </td>
+                                  </tr>
+                                  <!-- tr2 -->
+                                  <tr style="vertical-align: middle;">
+                                    <th  scope="row">
+                                        <div class="ms-box-img d-inline-block">
+                                            <img class="ms-img " src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span>Classe 76</span>
+                                    </th>
+                                    <td >16 Febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td>
+                                        <button type="button" class="btn btn-success">Done</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-pencil"></i></button>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-trash-can"></i> </button>
+                                    </td>
+                                  </tr>
+    
+                                  <!-- tr3 -->
+                                  <tr style="vertical-align: middle;">
+                                    <th  scope="row">
+                                        <div class="ms-box-img d-inline-block">
+                                            <img class="ms-img " src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span>Classe 77</span>
+                                    </th>
+                                    <td >17 Febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning text-white">Process</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-pencil"></i></button>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-trash-can"></i> </button>
+                                    </td>
+                                  </tr>
+    
+                                  <!-- tr4 -->
+                                  <tr style="vertical-align: middle;">
+                                    <th  scope="row">
+                                        <div class="ms-box-img d-inline-block">
+                                            <img class="ms-img " src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span>Classe 78</span>
+                                    </th>
+                                    <td >18 Febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td>
+                                        <button type="button" class="btn btn-success">Done</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-pencil"></i></button>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-trash-can"></i> </button>
+                                    </td>
+                                  </tr>
+    
+                                  <!-- tr6 -->
+                                  <tr style="vertical-align: middle;">
+                                    <th  scope="row">
+                                        <div class="ms-box-img d-inline-block">
+                                            <img class="ms-img " src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span>Classe 79</span>
+                                    </th>
+                                    <td >19 Febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger">Failed</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-pencil"></i></button>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-trash-can"></i> </button>
+                                    </td>
+                                  </tr>
+                                  <!-- tr7 -->
+                                  <tr style="vertical-align: middle;">
+                                    <th  scope="row">
+                                        <div class="ms-box-img d-inline-block">
+                                            <img class="ms-img " src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span>Classe 80</span>
+                                    </th>
+                                    <td >20 Febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td>
+                                        <button type="button" class="btn btn-success">Done</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-pencil"></i></button>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-trash-can"></i> </button>
+                                    </td>
+                                  </tr>
+    
+                                  <!-- tr-8 -->
+                                  <tr style="vertical-align: middle;">
+                                    <th  scope="row">
+                                        <div class="ms-box-img d-inline-block">
+                                            <img class="ms-img " src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span>Classe 81</span>
+                                    </th>
+                                    <td >21 Febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger">Failed</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-pencil"></i></button>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-trash-can"></i> </button>
+                                    </td>
+                                  </tr>
+    
+                                  <!-- tr9 -->
+                                  <tr style="vertical-align: middle;">
+                                    <th  scope="row">
+                                        <div class="ms-box-img d-inline-block">
+                                            <img class="ms-img " src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span>Classe 82</span>
+                                    </th>
+                                    <td >22 Febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td>
+                                        <button type="button" class="btn btn-success">Done</button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-pencil"></i></button>
+                                        <button type="button" class="btn btn-light ms-grey"><i class="fa-solid fa-trash-can"></i> </button>
+                                    </td>
+                                  </tr>
+                                
+                                  
+                                </tbody>
+                            </table>
                         </div>
                     </div>
+
+                    <div class="ms-container ms-2 rounded-3 ms-border-grey mt-5">
+                        <div class="ms-bg-grey ms-border-grey-bottom rounded-top-3">
+                            <h2 class="p-3">F.A.Q</h2>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Come posso aggiungere un nuovo studente?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Clicca sul + in alto nella sezione blu."
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Come posso accedere allle informazioni del mio account?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      Clicca sull'icona della campanella
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Posso usare questa dashboard da mobile?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                
+                
+                
+                <div class="col-12 my-3 col-lg-4"></div>
+                
                 </div>
             </div>
         </div>
