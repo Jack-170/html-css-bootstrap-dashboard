@@ -57,21 +57,17 @@ header{
     position: relative;
     height: 100%;
     background-color: #051e34;
-    /* debug rules */
-    border: 1px solid black;
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
+    /* debug rules */
+    /* border: 1px solid black; */
+   
 }
 
 .ms-main-content{
     flex-grow: 1;
     overflow: auto;
     /* debug rules */
-}
-
-[class*="col-"] {
-    /* min-height: 60px; */
-    /* border: 1px solid black; */
 }
 
 
@@ -125,6 +121,9 @@ header{
     width: 100%;
 }
 
+.ms-margin-right{
+    margin-right: 15px;
+}
 
 .ms-border-grey{
     border: 1px solid grey;
@@ -134,13 +133,6 @@ header{
     border-bottom: 1px solid grey;
 }
 
-
-
-
-
-
-
-/* stili main-content*/
 .ms-topbar-main .btn{
     font-size: 12px;
 }
